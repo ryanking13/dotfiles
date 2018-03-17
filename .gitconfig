@@ -1,0 +1,5 @@
+[user]
+	email = def6488@gmail.com
+	name = ryanking13
+[alias]
+	lg = log --pretty=format:\"%C(yellow)%h %C(green)%s %C(blue)%cr %C(red)%cn %C(auto)%d%Creset\" --graph --decorate --branches
