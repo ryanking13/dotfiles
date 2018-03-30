@@ -83,6 +83,6 @@ export PATH=$PATH':/csehome/ryanking13/bin'
 alias gr="grep -r -n"
 alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
-alias vimrc='~/.vimrc'
-alias bashrc='~/.bashrc'
-alias zshrc='~/.zshrc'
+alias vimrc='vi ~/.vimrc'
+alias bashrc='vi ~/.bashrc'
+alias zshrc='vi ~/.zshrc'
