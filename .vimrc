@@ -22,7 +22,7 @@ command PS vsp %:r.in|w|sp %:r.out|w|vertical resize 30|normal <C-w>w<C-w>w
 
 map <C-A> <ESC>:set mouse=a<CR>
 map <C-D> <ESC>:set mouse-=a<CR>
-map <C-T> <ESC>:NERDTreeToggle<CR>
+map <C-E> <ESC>:NERDTreeToggle<CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
