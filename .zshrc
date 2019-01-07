@@ -83,3 +83,5 @@ alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/
 alias vimrc='vi ~/.vimrc'
 alias bashrc='vi ~/.bashrc'
 alias zshrc='vi ~/.zshrc'
+
+alias els='exa'
