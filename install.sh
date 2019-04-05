@@ -38,4 +38,15 @@ echo "[*] Installing: exa"
 wget https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip
 unzip exa-linux-x86_64-0.8.0.zip
 mv exa-linux-x86_64 ~/.utils/exa
-rm exa-linux-x86_64-0.8.0.zip 
+rm exa-linux-x86_64-0.8.0.zip
+
+# autojump
+echo "[*] Installing: autojump"
+if [ -e ~/.utils/autojump ]; then
+	rm -rf ~/.utils/autojump
+fi
+git clone git://github.com/wting/autojump.git _autojump
+cd _autojump
+./install.py -d ~/.utils/autojump
+cd ..
+rm -rf _autojump
