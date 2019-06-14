@@ -18,6 +18,12 @@ cd ~
 if [ ! -e .utils ]; then
     mkdir .utils
 fi
+
+# ngrok
+echo "[*] Installing: ngrok"
+cp ngrok ~/.utils/ngrok
+chmod +x ~/.utils/ngrok
+
 cd .utils
 
 # bat
