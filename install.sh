@@ -1,12 +1,18 @@
-which curl wget git vim zsh>/dev/null
+which curl wget git vim zsh unzip python>/dev/null
 if [ $? -ne 0 ]; then
-    echo "please install curl wget git vim zsh"
+    echo "please install curl wget git vim zsh unzip python"
     exit
 fi
 
 cp .vimrc ~/.vimrc
 cp .zshrc ~/.zshrc
 echo "exec $(which zsh)" >> ~/.bashrc
+
+# ngrok
+echo "[*] Installing: ngrok"
+cp ngrok ~/.utils/ngrok
+chmod +x ~/.utils/ngrok
+
 
 if [ -e ~/.vim/bundle/Vundle.vim ]; then
     rm -rf ~/.vim/bundle/Vundle.vim
@@ -18,11 +24,6 @@ cd ~
 if [ ! -e .utils ]; then
     mkdir .utils
 fi
-
-# ngrok
-echo "[*] Installing: ngrok"
-cp ngrok ~/.utils/ngrok
-chmod +x ~/.utils/ngrok
 
 cd .utils
 
@@ -51,7 +52,7 @@ echo "[*] Installing: autojump"
 if [ -e ~/.utils/autojump ]; then
 	rm -rf ~/.utils/autojump
 fi
-git clone git://github.com/wting/autojump.git _autojump
+git clone https://github.com/wting/autojump.git _autojump
 cd _autojump
 ./install.py -d ~/.utils/autojump
 cd ..
