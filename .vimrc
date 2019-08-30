@@ -8,28 +8,32 @@ set number
 set autoindent
 set cindent
 set smartindent
-set paste!
+set paste
 set showmatch
 set nocompatible
 set laststatus=2
 set background=dark
 set autoread
 set showmode
-"set list
+set list
 set clipboard=unnamed
-
-command PS vsp %:r.in|w|sp %:r.out|w|vertical resize 30|normal <C-w>w<C-w>w
 
 map <C-A> <ESC>:set mouse=a<CR>
 map <C-D> <ESC>:set mouse-=a<CR>
-map <C-E> <ESC>:NERDTreeToggle<CR>
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'The-NERD-tree'
-Plugin 'pangloss/vim-javascript'
-Plugin 'othree/yajs.vim'
-call vundle#end()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+Plug 'junegunn/seoul256.vim'
+Plug 'thaerkh/vim-indentguides'
+Plug 'morhetz/gruvbox'
+"Plug 'sickill/vim-monokai'
+call plug#end()
 
 filetype plugin indent on
 syntax on
