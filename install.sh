@@ -8,23 +8,17 @@ cp .vimrc ~/.vimrc
 cp .zshrc ~/.zshrc
 echo "exec $(which zsh)" >> ~/.bashrc
 
+# other utilities
+if [ ! -e ~/.utils ]; then
+    mkdir -p ~/.utils
+fi
+
 # ngrok
 echo "[*] Installing: ngrok"
 cp ngrok ~/.utils/ngrok
 chmod +x ~/.utils/ngrok
 
-
-if [ -e ~/.vim/bundle/Vundle.vim ]; then
-    rm -rf ~/.vim/bundle/Vundle.vim
-fi
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-# other utilities
 cd ~
-if [ ! -e .utils ]; then
-    mkdir .utils
-fi
-
 cd .utils
 
 # bat
