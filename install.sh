@@ -23,11 +23,11 @@ cd .utils
 
 # bat
 echo "[*] Installing: bat"
-wget https://github.com/sharkdp/bat/releases/download/v0.2.2/bat-v0.2.2-x86_64-unknown-linux-gnu.tar.gz
-tar xvf bat-v0.2.2-x86_64-unknown-linux-gnu.tar.gz
-rm bat-v0.2.2-x86_64-unknown-linux-gnu.tar.gz
-mv bat-v0.2.2-x86_64-unknown-linux-gnu/bat bat
-rm -rf bat-v0.2.2-x86_64-unknown-linux-gnu
+wget https://github.com/sharkdp/bat/releases/download/v0.12.0/bat-v0.12.0-aarch64-unknown-linux-gnu.tar.gz
+tar xvf bat-v0.12.0-aarch64-unknown-linux-gnu.tar.gz
+rm bat-v0.12.0-aarch64-unknown-linux-gnu.tar.gz
+mv bat-v0.12.0-aarch64-unknown-linux-gnu/bat bat
+rm -rf bat-v0.12.0-aarch64-unknown-linux-gnu
 
 # fzf
 echo "[*] Installing: fzf"
