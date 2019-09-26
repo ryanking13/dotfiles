@@ -8,7 +8,7 @@ set number
 set autoindent
 set cindent
 set smartindent
-set paste
+"set paste
 set showmatch
 set nocompatible
 set laststatus=2
