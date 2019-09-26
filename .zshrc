@@ -85,5 +85,3 @@ alias bashrc='vi ~/.bashrc'
 alias zshrc='vi ~/.zshrc'
 
 alias els='exa'
-
-# [[ -s $HOME/.utils/autojump/etc/profile.d/autojump.sh ]] && source $HOME/.utils/autojump/etc/profile.d/autojump.sh

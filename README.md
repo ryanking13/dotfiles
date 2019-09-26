@@ -7,4 +7,5 @@
 ./zsh_install.sh
 ./install.sh
 ./after_zsh_install.sh
+sudo ./pure.sh
 ```

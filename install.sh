@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 which curl wget git vim zsh unzip python>/dev/null
 if [ $? -ne 0 ]; then
     echo "please install curl wget git vim zsh unzip python"
