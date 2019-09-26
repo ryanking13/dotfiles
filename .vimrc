@@ -32,9 +32,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 Plug 'thaerkh/vim-indentguides'
-Plug 'morhetz/gruvbox'
-"Plug 'sickill/vim-monokai'
+"Plug 'morhetz/gruvbox'
+Plug 'sickill/vim-monokai'
 call plug#end()
 
+colo monokai
 filetype plugin indent on
 syntax on
