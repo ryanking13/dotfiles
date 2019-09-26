@@ -17,6 +17,7 @@ set autoread
 set showmode
 set list
 set clipboard=unnamed
+set termguicolors
 
 map <C-A> <ESC>:set mouse=a<CR>
 map <C-D> <ESC>:set mouse-=a<CR>
