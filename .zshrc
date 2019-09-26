@@ -85,3 +85,4 @@ alias bashrc='vi ~/.bashrc'
 alias zshrc='vi ~/.zshrc'
 
 alias els='exa'
+alias np='navi --print'
