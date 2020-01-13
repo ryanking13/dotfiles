@@ -54,3 +54,9 @@ cd _autojump
 ./install.py -d ~/.utils/autojump
 cd ..
 rm -rf _autojump
+
+# broot
+echo "[*] Installing: broot"
+wget https://dystroy.org/broot/download/x86_64-linux/broot
+mv broot ~/.utils/broot
+chmod +x ~/.utils/broot
