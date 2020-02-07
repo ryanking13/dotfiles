@@ -9,6 +9,8 @@ fi
 cp .vimrc ~/.vimrc
 cp .zshrc ~/.zshrc
 echo "exec $(which zsh)" >> ~/.bashrc
+cp .gitmessage.txt ~/.gitmessage.txt
+git config --global commit.template ~/.gitmessage.txt
 
 # other utilities
 if [ ! -e ~/.utils ]; then
